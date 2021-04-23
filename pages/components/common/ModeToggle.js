@@ -50,38 +50,6 @@ const Input = styled.input`
   }
 `;
 
-const Span = styled.span`
-  /* position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 34px;
-
-  &:before {
-    position: absolute;
-    content: '';
-    height: 40px;
-    width: 40px;
-    left: 0px;
-    bottom: 4px;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    box-shadow: 0 0px 15px #2020203d;
-    background: white url('https://i.ibb.co/FxzBYR9/night.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-  } */
-`;
-
 const ModeToggle = ({ toggleTheme }) => {
   return (
     <Container>
