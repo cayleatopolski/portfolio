@@ -1,10 +1,18 @@
-import ModeSlider from './components/mode-slider/ModeSlider';
-import styles from './components/mode-slider/styles.module.css';
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme, GlobalStyles } from '../styles/ThemeConfig';
+import Nav from './components/nav/Nav';
 
 export default function Home() {
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    theme == 'light' ? setTheme('dark') : setTheme('light');
+  };
   return (
-    <div className={styles.container}>
-      <ModeSlider />
-    </div>
+    <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
+      <GlobalStyles />
+      <Nav toggleTheme={toggleTheme} />
+    </ThemeProvider>
   );
 }

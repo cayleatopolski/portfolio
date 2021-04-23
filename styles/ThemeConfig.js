@@ -8,10 +8,11 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  body: '#363537',
-  text: '#FAFAFA',
+  body: '#150c30',
+  text: '#FFF',
   toggleBorder: '#6B8096',
-  background: '#999',
+  background: '#150c30',
+  anchor: '#FFF',
 };
 
 export const GlobalStyles = createGlobalStyle`
@@ -20,5 +21,9 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
     transition: all 0.50s linear;
+  }
+
+  a {
+    color: ${({ theme }) => theme.text};
   }
 `;
